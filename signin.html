@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="signin.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+</head>
+<body>
+	<h1>Login</h1> <br>
+
+	<form class="sign_in_form">
+		Email <input type="email" id="sign_in_email" class="form-control" placeholder="Email" required> <br>  <br>
+		Password <input type="password" name=password placeholder="Password" class="form-control" id="sign_in_password" required> <br> <br>
+		<button class="btn btn-outline-primary" id="submit_sign_in" onclick="formSubmit()">Sign In</button> 
+		<button class="btn btn-outline-primary" id="sign_up_link" onclick="formSubmit()">Sign Up</button> 
+
+	</form>
+	 <br> <br> <br>
+
+	<form class="sign_up_form">
+		<h1>Sign Up</h1> <br>
+		Name<span class="compulsory">*</span> <input type="text" id="sign_up_name" class="form-control" placeholder="Full Name" required> <br> <br>
+		Email<span class="compulsory">*</span> <input type="email" id="sign_up_email" class="form-control" placeholder="Email" required> <br>  <br>
+		Number<span class="compulsory">*</span> <span id="code">+91</span><input type="text" placeholder="Number" onkeydown="return testNumberValid(event)" id="sign_up_umber" class="form-control" required title="Must be 10 numbers"> <br> <br>
+		<p id="numberValid" class="formValid"></p>
+		Date of Birth<span class="compulsory">*</span> <input type="date" name="dob" class="form-control" id="sign_up_dob" max="2001-12-31" required> <br> <br>
+		Password<span class="compulsory">*</span> <input type="password" name=password placeholder="Password" class="form-control" id="sign_up_password" required> <br> <br>
+		<button class="btn btn-outline-primary" id="submit_sign_up" onclick="formSubmit()">Sign Up</button> 
+	</form>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="signin.js"></script>
+</body>
+</html>
