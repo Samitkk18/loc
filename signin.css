@@ -1,0 +1,27 @@
+body{
+	text-align: center;
+	background-color: rgb(40, 40, 40);
+	color: white;
+}
+
+.sign_up_form{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+.sign_in_form{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+.form-control{
+	display: inline;
+	width: 350px;
+}
+.compulsory{
+	color: red;
+}
+#submit_sign_in{
+	margin-right: 20px;
+}
