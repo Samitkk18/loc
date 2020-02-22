@@ -1,0 +1,15 @@
+body{
+	background-color:rgb(40, 40, 40);
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
+.list-group{
+	width: 30%;
+	color: black;
+	margin: 100px auto;
+}
+.dropdown{
+	display: inline;
+	margin: 50px;
+}
